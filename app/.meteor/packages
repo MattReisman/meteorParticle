@@ -6,7 +6,15 @@
 
 meteor-platform
 autopublish
-insecure
 urigo:angular
-twbs:bootstrap
+
 angularui:angular-ui-router
+accounts-password
+accounts-ui
+fourseven:scss
+
+twbs:bootstrap
+#ian:accounts-ui-bootstrap-3
+
+angularui:angular-ui-bootstrap
+

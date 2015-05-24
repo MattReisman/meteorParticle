@@ -35,7 +35,7 @@
     <label>Description</label>
     <input ng-model="newDevice.description" placeholder="Description of your device and project">
 
-    <button ng-click="devices.save(newDevice); newDevice='';" class="btn btn-success">Click to Add Device</button>
+    <button ng-click="newDevice.owner=$root.currentUser._id; devices.save(newDevice); newDevice='';" class="btn btn-success">Click to Add Device</button>
 </form>
     <!-- <button ng-click="removeAll()" class="btn btn-danger">remove all devices</button> -->
 
