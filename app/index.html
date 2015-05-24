@@ -1,8 +1,13 @@
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <base href="/">
 </head>
-
 <body>
-  <div ng-app="devices" ng-include="'index.ng.html'"></div>
+
+<div ng-app="devices">
+  <h1>
+    <a href="/devices">Home</a>
+  </h1>
+  <div ui-view></div>
+</div>
+
 </body>
