@@ -9,3 +9,4 @@ autopublish
 insecure
 urigo:angular
 twbs:bootstrap
+angularui:angular-ui-router
