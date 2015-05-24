@@ -1,0 +1,44 @@
+<div ng-controller="DevicesListCtrl">
+  <div class="jumbotron">
+    <p>Total Devices: {{devices.length}}</p>
+  </div>
+  <div class="container">
+    <ul>
+      <li ng-repeat="device in devices">
+        <div>
+          <h4>{{device.name}}</h4>
+          <span>
+          <p>{{device.make}} <span><strong>{{device.model}}</strong> </span><!-- <span>{{device.description}}</span> --></p>
+          </span></div>
+         <p>ID:<strong>{{device.deviceID}}</strong> <span>Token:<strong>{{device.accessToken}}</strong> - </span></p>
+         <p>{{device.description}}</p>
+         <button ng-click="remove(device)" class="btn btn-danger">Remove Device</button>
+        <hr>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div class="jumbotron">
+    <h4>Add Device</h4>
+      <form>
+        <label>Name</label>
+        <input ng-model="newDevice.name" placeholder="name your device">
+        <label>Make</label>
+        <input ng-model="newDevice.make" placeholder="device manufacturer">
+        <label>Model</label>
+        <input ng-model="newDevice.model" placeholder="type of device">
+        <label>Description</label>
+        <input ng-model="newDevice.description" placeholder="Description of your device and project">
+<!--         <label>Device ID</label>
+        <input ng-model="newDevice.deviceID">
+        <label>Access Token</label>
+        <input ng-model-"newDevice.accessToken"> -->
+        <button ng-click="devices.save(newDevice); newDevice='';" class="btn btn-success">Add Device</button>
+        <hr>
+        <!-- <button ng-click="removeAll()" class="btn btn-danger">remove all devices</button> -->
+
+      </form>
+    </div>
+  </div>
+</div>
+
