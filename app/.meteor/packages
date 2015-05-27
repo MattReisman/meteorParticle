@@ -5,16 +5,14 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 urigo:angular
 
 angularui:angular-ui-router
 accounts-password
-accounts-ui
 fourseven:scss
 
 twbs:bootstrap
-#ian:accounts-ui-bootstrap-3
+ian:accounts-ui-bootstrap-3
 
 angularui:angular-ui-bootstrap
 
